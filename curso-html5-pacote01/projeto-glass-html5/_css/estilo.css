@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body{
-    background-color: hsl(59, 71%, 64%);
+    background-color: hsl(0, 0%, 100%);
     ;
-    color: rgba(20, 7, 9, 0.747);
+    color: rgba(0, 0, 0, 0.747);
 }
 p {
     text-align: justify;
