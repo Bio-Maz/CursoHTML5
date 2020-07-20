@@ -1,14 +1,29 @@
 @charset "UTF-8";
 
 body{
-    background-color: hsl(0, 0%, 100%);
+    background-color: #dddddd;
     ;
-    color: rgba(0, 0, 0, 0.747);
+    color: rgba(0, 0, 0, 1);
 }
+
+div#interface{
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto; 
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
 
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 920px;
+    top: 40px;
 }
 
 /* Formatação de imagens com legendas */
@@ -52,7 +67,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -10px;
-    left: 300px;
+    left: 410px;
  }
 
  nav#menu li{
@@ -61,6 +76,10 @@ nav#menu ul{
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
 }
 
 nav#menu li:hover{
@@ -69,4 +88,13 @@ nav#menu li:hover{
 
 nav#menu h1{
     display: none;
+}
+
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: seashell;
 }
