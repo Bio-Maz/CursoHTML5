@@ -130,3 +130,40 @@ nav#menu a{
 nav#menu a:hover{
     color: seashell;
 }
+
+section#corpo{
+    display: block;
+    width: 490px;
+    float: left;
+    border-right: 1px solid #606060 ;
+    padding-right: 15px;
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;    
+    padding: 10px;
+}
+
+
+aside#lateral{
+    display: block;
+    width: 380px;
+    float: right;
+
+    
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+    text-align: center;
+    padding-top: 10px;
+}
