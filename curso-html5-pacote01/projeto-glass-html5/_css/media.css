@@ -2,8 +2,9 @@
 
 
 div#tv-radio{
+    font-size: 100pt;
     width: 900px;
     height: 580px;
     margin: auto;
-    background: url('../_imagens/radio-tv.png') no-repeat;
+    background-image: url("../_imagens/radio-tv.png");
 }
