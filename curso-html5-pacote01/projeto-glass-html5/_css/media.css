@@ -1,10 +1,2 @@
-@charset "UTF-8";
 
 
-div#tvradio{
-    font-size: 100pt;
-    width: 900px;
-    height: 580px;
-    margin: auto;
-    background-image: url("../_imagens/radio-tv.png");
-}
