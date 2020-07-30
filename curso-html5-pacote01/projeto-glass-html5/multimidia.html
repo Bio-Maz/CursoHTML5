@@ -5,6 +5,32 @@
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet"  href="_css/estilo.css"/>
     <link rel="stulesheet" href="_css/media.css"/>
+    <style>
+        div#tvradio{
+            font-size: 100pt;
+            width: 900px;
+            height: 580px;
+            margin: auto;
+            background-image: url(/projeto-glass-html5/_imagens/radio-tv.png);
+        }
+
+        audio#musica{
+            display: block;
+            position: relative;
+            left: 569px;
+            top: 490px;
+            width: 310px;
+        }
+
+        video#filme{
+            display: block;
+            position: relative;
+            left: 65px;
+            top: 50px;
+            width: 485px;
+            
+        }
+    </style>
 </head>
 <script language="_javascript" src="_javascript/funcoes.js"></script>
 <body>
@@ -30,7 +56,7 @@
     </header>
     
     <section id="corpo-full">
-        <article id="noticia-principal"> 
+<article id="noticia-principal"> 
             <header id="cabecalho-artigo">  
                 <hgoup>    
                     <h3>Glass > Multimídia</h3>
@@ -40,17 +66,17 @@
                 </hgoup>
             </header>  
 
-            <div id="tv-radio">
-                <audio id="musica" controls="controls">
-                    <source src="../curso-html5-pacote02/_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
-                    Desculpe, não foi pssível carregar o áudio.    
-                </audio>
-                <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
-                    <source src="../curso-html5-pacote02/_media/getting-started.mp4" type="video/mp4">
-                    Desculpe, não foi possível carregar o vídeo.    
-                </video>
-            </div>
-        </article>    
+    <div id="tvradio">
+        <audio id="musica" controls="controls">
+            <source src="../curso-html5-pacote02/_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+            Desculpe, não foi pssível carregar o áudio.    
+            </audio>
+        <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+            <source src="../curso-html5-pacote02/_media/getting-started.mp4" type="video/mp4">
+            Desculpe, não foi possível carregar o vídeo.    
+            </video>
+    </div>
+</article>    
     </section>
        
     <footer id="rodape">
