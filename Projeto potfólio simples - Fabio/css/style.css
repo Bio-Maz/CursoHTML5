@@ -34,6 +34,11 @@ html,body{
 	border-radius: 50%;
 }
 
+.img-sidebar img:hover{
+	transition-duration: 2s;
+	border: 5px solid #E8DDCB;
+}
+
 .menu{
 	margin: 20px 0;
 	text-align: center;
@@ -125,6 +130,16 @@ section.descricao p{
 	}
 }
 
+.icones-sociais a:hover{
+	color:#E8DDCB ;
+}
+
 .icones-sociais i{
 	line-height: 40px;
+}
+
+.sobre p{
+	color:#DC9E82;
+	font-size: 18px;
+	margin-top: 50%;
 }
