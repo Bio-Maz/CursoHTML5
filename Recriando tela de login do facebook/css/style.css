@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "open sans";
+}
+
+html,body{
+	height: 100%;/*altura*/
+}
+
+
+
+.content{
+	width: 100%;
+	height: 80%;
+	background-color: #F0F2F5;
+}
+
+.content-titulo{
+	width: 40%;
+	display: inline-block;
+	margin-top: 15%;
+	margin-left: 10%;
+}
+
+.content-titulo h1{
+	font-size: 60px;
+	color: #1877F2;
+}
+
+.content-titulo h3{
+	margin-top: 20px;
+	font-size: 28px;
+	color: #1C1E21;
+}
+
+.formulario{
+	margin-top: 10%;
+	margin-right: 12%;
+	float: right;
+	width: 380px;
+	height: 325px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=email],[type=password]{
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+	-webkit-transition: 0.1s;
+	transition: 0.1s;
+	outline: none;
+	font-size: 20px;
+	color: #BEC3C9;
+}
+
+input[type=email]:focus{
+	border: 2px solid #67a3f0;
+}
+
+input[type=password]:focus{
+	border: 2px solid #67a3f0;
+}
+
+.botao-azul{
+	width: 100%;
+	padding: 13px;
+	background-color: #1877F2;
+	font-size: 24px;
+	border: 1px solid white; 
+	border-radius: 4px;
+	color: white;
+}
+
+.a-center{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.formulario a{
+	text-decoration: none;
+    text-align: justify; 	
+	color: #1877F2; 
+	font-size: 18px;
+	
+}
+
+hr{
+	margin-top: 18px;
+	color: red;
+}
+
+.botao-verde{
+	border: 1px solid white;
+	border-radius: 6px;
+	font-size: 20px;
+	color: white;
+	margin-top: 25px;
+	margin-left: 110px;
+	background-color: #42B72A;
+	width: 45%;
+	padding: 12px;
+	text-align: center;
+}
+
+.criar-pagina{
+	margin-top: 12%;
+	margin-right: 13%;
+	text-align: right;
+}
+
+.criar-pagina a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
