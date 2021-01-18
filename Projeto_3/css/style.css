@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/******Classes Auxiliares*****/
+.container{
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 2%;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    width: 33.3%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+/***************************/
+
+/*****HEADER*****/
+.logo{
+    float: left;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 5px;
+}
+
+nav.menu-desktop li.selected{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+nav.menu-desktop li{
+    font-weight: lighter;
+    padding: 0 10px;
+    display: inline-block;
+} 
+
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+/******************/
+
+/*****Section Main-bg********/
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../imagens/Paisagem.jpg);
+}
+
+section.main-bg .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+section.main-bg h2{
+    color: #52aaa7;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.main-bg p{
+    text-align: left;
+    color: white;
+    font-size: 17px;
+    margin-top: 16px;
+}
+/******************/
+
+/****Section diferenciais******/
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+
+.line-text div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 6px;
+    background: #52aaa7;
+}
+
+.line-text h2{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais{
+    margin-top: 35px;
+}
+
+.box-icone-single{
+    margin-bottom: 20px;
+    float: left;
+    width: 33.3%;
+    padding:0 10px;
+}
+
+.box-icone-single h2{
+    color: #8a6b62;
+    font-size: 40px;
+}
+
+.box-icone-single p{
+    font-size: 16px;
+    color: #646464;
+    font-weight: lighter;
+}
+
+/******************/
+
+/****Section sobre-equipe******/
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.sobre-equipe .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    margin-top: 15px;
+}
+
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.descricao-avatar{
+    padding-left: 5px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p{
+    color: rgb(30, 30, 30);
+    font-weight: lighter;
+}
+/**********************/
+
+/****Section inscricao****/
+section.inscricao{
+    background: #52aaa7;
+    padding: 20px 0;
+}
+
+.inscricao-form input[type=text]{
+    vertical-align: middle;
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit]{
+    width: 120px;
+    vertical-align: middle;
+    height: 40px;
+    background: #1d6c64;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+}
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+}
+
+.card-single img{
+    width: 100%;
+}
+
+.card-single h3{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+footer.footer1 div.container{
+    max-width: 1200px;
+}
+
+footer.footer1{
+    background: #52aaa7;
+    padding: 20px 0; 
+    color: white;
+}
+
+footer.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+footer.footer1 p{
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+footer.footer1 a{
+    display: block;
+    color: white;
+}
+
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+footer.footer2{
+    background: #237a70;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 768px){
+
+    footer.footer1{
+        text-align: center;
+    }
+
+    .card-single{
+        width: 100%;
+    }
+
+    .w50, .w33{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-icone-single{
+        width: 100%;
+    }
+
+    .equipe-container{
+        width: 100%;
+    }
+
+    .sobre-container{
+        margin-top: 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .card-single{
+        padding: 10px;
+    }
+}
