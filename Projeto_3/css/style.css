@@ -16,6 +16,16 @@ html,body{
     padding: 0 2%;
 }
 
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
 .w50{
     width: 50%;
     float: left;
@@ -36,14 +46,59 @@ html,body{
 /***************************/
 
 /*****HEADER*****/
+header{
+    padding: 10px 0;
+}
+
 .logo{
     float: left;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
 }
 
 .logo h2{
     font-weight: normal;
     font-size: 23px;
 }
+
+/*Menu Mobile*/
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2{cursor: pointer;}
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+}
+
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-top: 1px solid black;
+    
+}
+
+nav.menu-mobile li.selected{
+    background: rgb(225, 225, 225);
+}
+
+nav.menu-mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+/****/
+/*Menu Desktop*/
 nav.menu-desktop{
     float: right;
 }
@@ -72,6 +127,7 @@ nav.menu-desktop a{
 nav.menu-desktop a:hover{
     text-decoration: underline;
 }
+/***/
 /******************/
 
 /*****Section Main-bg********/
@@ -314,8 +370,260 @@ footer.footer2{
     color: white;
     padding: 15px 0;
 }
+/************************/
+
+/***Section title-page***/
+section.title-page{
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+section.title-page .container{
+    position: relative;
+    z-index: 101;
+}
+
+.overlay__title-page{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+section.title-page h2{
+    color: #44d4c5;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+section.title-page p{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+/**********************/
+
+/****Section sobre__noticia*****/
+section.sobre__noticia{
+    padding: 30px 0;
+}
+
+.sobre__noticia__single img{
+    float: left;
+    width: 50%;
+    max-width: 100%;
+}
+
+.sobre__noticia__single p{
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.paragrafo__noticia__single p{
+    padding: 1% 0 0 0;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+/*************************/
+
+/***Efeito Paralax na Página sobre****/
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../imagens/Paisagem.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+section.paralax h2.chamada-paralax{
+    color: #44d4c5;
+    border: 1px solid #44d4c5;
+    padding: 5px 25px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+section.paralax p{
+    margin-top: 8px;
+    color: white;
+}
+/************************/
+
+/**Section equipe**/
+section.equipe{
+    padding: 40px 0;
+}
+
+.equipe-circles{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single{
+    padding: 0 20px;
+    text-align: center;
+    width: 33.3%;
+}
+
+.equipe-circle-single h3{
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.equipe-circle-single p{
+    margin-top: 4px;
+    font-weight: lighter;
+}
+
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+}
+/***********************/
+
+/**Section sobre-final**/
+section.sobre__final{
+    background: rgb(225, 225, 225);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 20px 0;
+}
+
+section.sobre__final p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.card-text{
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.card-text img{
+    max-width: 100%;
+}
+
+.card-text h3{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+/*********************/
+
+/**Section contato**/
+section.contato{
+    padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+    padding: 0 10px;
+}
+
+.formulario{
+    margin-top: 10px;
+}
+
+.formulario h2{
+    text-align: center;
+    color: #acac9d;
+    font-size: 17px;
+    font-weight: normal;
+    background: #d0d0dd;
+    border-left: 5px solid #cccccc;
+    padding: 4px 0;
+    margin-bottom: 10px;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form h2{
+    font-weight: normal;
+}
+
+.tags-form p{
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+    color: white;
+    font-size: 15px;
+    background: #249c8f;
+    text-align: center;
+    margin-top:12px;
+    padding: 8px 4px;
+}
 
 @media screen and (max-width: 768px){
+
+    .tags-form{padding-left:0;}
+
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 0;
+    }
+
+    .formulario textarea{
+        margin-bottom: 0;
+    }
 
     footer.footer1{
         text-align: center;
@@ -325,7 +633,7 @@ footer.footer2{
         width: 100%;
     }
 
-    .w50, .w33{
+    .w50, .w33, .w60, .w40, .w100{
         width: 100%;
         margin-bottom: 20px;
     }
@@ -342,11 +650,32 @@ footer.footer2{
         margin-top: 60px;
         width: 100%;
     }
+
+    .sobre__noticia__single img{
+        width: 100%;
+    }
+    
+    .sobre__noticia__single p{
+        width: 100%;
+        padding: 2% 0 0 0;
+    }
+    
 }
 
 @media screen and (max-width: 500px){
 
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{display: block;}
+
     .card-single{
         padding: 10px;
     }
+
+    .equipe-circle-single{
+        padding: 0 8px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card-text{width: 100%;}
 }
