@@ -8,167 +8,674 @@
 html,body{
     height: 100%;
 }
-/***Divs gearis***/
+
+/******Classes Auxiliares*****/
 .container{
-    width: 100%;
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 2%;
+}
+
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.w33{
+    width: 33.3%;
+    float: left;
+}
+
+.center{
+    text-align: center;
 }
 
 .clear{
     clear: both;
 }
-/*******************/
+/***************************/
 
+/*****HEADER*****/
 header{
-    background-color:rgb(180, 180, 180);
-    padding: 10px 2% 40px 2%;
+    padding: 10px 0;
 }
 
-.logo-1{
+.logo{
     float: left;
-    width: 150px;
-    height: 60px;
-    background-image: url(../imagens/logo1.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    /*background-color: purple;*/
 }
 
-.logo-2{
-    float: right;
-    width: 130px;
-    height: 70px;
-    background-image: url(../imagens/logo2.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center; 
-   /* background-color: green;*/
-}
-
-section.cover-form{
-    width: 100%;/*largura*/
-}
-
-.bg{
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    height: 560px;/*altura*/
-    background-image: url(../imagens/bg-form.jpg);
-}
-
-.form-container{
-    position: absolute;
-    right: 30px;
-    top: -2.5%;
-    width: 400px;/*largura*/
-    height: 105%;/*altura*/
-    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
-    background-color: white;
-}
-
-.form-container h2{
-    font-weight: normal;
-    background-color: rgb(210, 210, 210);
-    padding: 25px 15px;
+.logo a{
+    text-decoration: none;
     color: black;
-    font-size: 18px;
 }
 
-.form-container form{
-    padding: 20px;
-    margin-top: 8px;
-}
-
-.form-container form input[type=text]{
-    width: 100%;/*largura*/
-    border: 1px solid #ccc;
-    height: 45px;/*altura*/
-    line-height: 45px;
-    padding-left: 20px;
-}
-
-.form-wraper:not(:first-child){
-    margin-top: 40px;
-}
-
-.form-wraper:last-child{
-    margin-top: 20px;
-}
-
-.form-container form p{
-    font-size: 14px;
-    color: #525252;
-}
-
-.form-container form input[type=submit]{
-    background-color: #033C50;
-    text-transform: uppercase;
-    color: white;
-    width: 100%;/*largura*/
+.logo h2{
+    font-weight: normal;
     font-size: 23px;
-    height: 45px;/*altura*/
-    cursor: pointer;
-    border: 0;
 }
 
-section.chamada{
-    width: 100%;/*largura*/
-    z-index: 1;
+/*Menu Mobile*/
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2{cursor: pointer;}
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
     text-align: center;
 }
 
-section.chamada div.container{
-    padding: 60px 0 50px 0;
-    background-color: #29526d;
+nav.menu-mobile li{
+    padding: 8px 0;
+    border-top: 1px solid black;
+    
 }
 
-section.chamada h2{
-    width: 98%;/*largura*/
-    max-width: 700px;
+nav.menu-mobile li.selected{
+    background: rgb(225, 225, 225);
+}
+
+nav.menu-mobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+/****/
+/*Menu Desktop*/
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 5px;
+}
+
+nav.menu-desktop li.selected{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+nav.menu-desktop li{
+    font-weight: lighter;
+    padding: 0 10px;
     display: inline-block;
+} 
+
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+/***/
+/******************/
+
+/*****Section Main-bg********/
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../imagens/Paisagem.jpg);
+}
+
+section.main-bg .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+section.main-bg h2{
+    color: #52aaa7;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.main-bg p{
+    text-align: left;
     color: white;
+    font-size: 17px;
+    margin-top: 16px;
+}
+/******************/
+
+/****Section diferenciais******/
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color: #52aaa7;
+}
+
+.line-text div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 6px;
+    background: #52aaa7;
+}
+
+.line-text h2{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.icones-diferenciais{
+    margin-top: 35px;
+}
+
+.box-icone-single{
+    margin-bottom: 20px;
+    float: left;
+    width: 33.3%;
+    padding:0 10px;
+}
+
+.box-icone-single h2{
+    color: #8a6b62;
+    font-size: 40px;
+}
+
+.box-icone-single p{
+    font-size: 16px;
+    color: #646464;
+    font-weight: lighter;
+}
+
+/******************/
+
+/****Section sobre-equipe******/
+section.sobre-equipe{
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.sobre-equipe .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.sobre-container p{
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.avatar-box{
+    margin-top: 15px;
+}
+
+.img-avatar{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.descricao-avatar{
+    padding-left: 5px;
+    width: calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3{
+    color: rgb(30, 30, 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.descricao-avatar p{
+    color: rgb(30, 30, 30);
+    font-weight: lighter;
+}
+/**********************/
+
+/****Section inscricao****/
+section.inscricao{
+    background: #52aaa7;
+    padding: 20px 0;
+}
+
+.inscricao-form input[type=text]{
+    vertical-align: middle;
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.inscricao-form input[type=submit]{
+    width: 120px;
+    vertical-align: middle;
+    height: 40px;
+    background: #1d6c64;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+}
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+}
+
+.card-single img{
+    width: 100%;
+}
+
+.card-single h3{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+
+}
+
+footer.footer1 div.container{
+    max-width: 1200px;
+}
+
+footer.footer1{
+    background: #52aaa7;
+    padding: 20px 0; 
+    color: white;
+}
+
+footer.footer1 h2{
+    font-weight: normal;
     font-size: 23px;
-    font-weight: normal;
 }
 
-section.chamada p{
-    width: 98%;/*largura*/
-    max-width: 700px;
-    display: inline-block;
+footer.footer1 p{
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+footer.footer1 a{
+    display: block;
     color: white;
-    margin-top: 18px;
+}
+
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+footer.footer2{
+    background: #237a70;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+/************************/
+
+/***Section title-page***/
+section.title-page{
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+section.title-page .container{
+    position: relative;
+    z-index: 101;
+}
+
+.overlay__title-page{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+section.title-page h2{
+    color: #44d4c5;
+    font-size: 35px;
     font-weight: normal;
 }
 
-@media screen and (max-width: 960px){
+section.title-page p{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+/**********************/
 
-    .bg{
-        height: auto;/*altura*/
-        padding: 40px 0;
-        text-align: center;
-    }
-
-    .form-container{
-        height: auto;/*altura*/
-        max-width: 400px;
-        width: 96%;
-        position: static;
-        display: inline-block;
-    }
+/****Section sobre__noticia*****/
+section.sobre__noticia{
+    padding: 30px 0;
 }
 
-@media screen and (max-width: 510px){
+.sobre__noticia__single img{
+    float: left;
+    width: 50%;
+    max-width: 100%;
+}
 
-    header{
+.sobre__noticia__single p{
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.paragrafo__noticia__single p{
+    padding: 1% 0 0 0;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 25px;
+}
+/*************************/
+
+/***Efeito Paralax na Página sobre****/
+section.paralax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../imagens/Paisagem.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+}
+
+section.paralax h2.chamada-paralax{
+    color: #44d4c5;
+    border: 1px solid #44d4c5;
+    padding: 5px 25px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+section.paralax p{
+    margin-top: 8px;
+    color: white;
+}
+/************************/
+
+/**Section equipe**/
+section.equipe{
+    padding: 40px 0;
+}
+
+.equipe-circles{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.equipe-circle-single{
+    padding: 0 20px;
+    text-align: center;
+    width: 33.3%;
+}
+
+.equipe-circle-single h3{
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.equipe-circle-single p{
+    margin-top: 4px;
+    font-weight: lighter;
+}
+
+.avatar-single{
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+}
+/***********************/
+
+/**Section sobre-final**/
+section.sobre__final{
+    background: rgb(225, 225, 225);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 20px 0;
+}
+
+section.sobre__final p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.card-text{
+    margin-top: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.card-text img{
+    max-width: 100%;
+}
+
+.card-text h3{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+/*********************/
+
+/**Section contato**/
+section.contato{
+    padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+    padding: 0 10px;
+}
+
+.formulario{
+    margin-top: 10px;
+}
+
+.formulario h2{
+    text-align: center;
+    color: #acac9d;
+    font-size: 17px;
+    font-weight: normal;
+    background: #d0d0dd;
+    border-left: 5px solid #cccccc;
+    padding: 4px 0;
+    margin-bottom: 10px;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form h2{
+    font-weight: normal;
+}
+
+.tags-form p{
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+    color: white;
+    font-size: 15px;
+    background: #249c8f;
+    text-align: center;
+    margin-top:12px;
+    padding: 8px 4px;
+}
+
+@media screen and (max-width: 768px){
+
+    .tags-form{padding-left:0;}
+
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 0;
+    }
+
+    .formulario textarea{
+        margin-bottom: 0;
+    }
+
+    footer.footer1{
         text-align: center;
     }
 
-    [class^="logo"{
-        margin-top: 10px;
-        display: inline-block;
-        float: none;
+    .card-single{
+        width: 100%;
     }
+
+    .w50, .w33, .w60, .w40, .w100{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box-icone-single{
+        width: 100%;
+    }
+
+    .equipe-container{
+        width: 100%;
+    }
+
+    .sobre-container{
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .sobre__noticia__single img{
+        width: 100%;
+    }
+    
+    .sobre__noticia__single p{
+        width: 100%;
+        padding: 2% 0 0 0;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    nav.menu-desktop{display: none;}
+    nav.menu-mobile{display: block;}
+
+    .card-single{
+        padding: 10px;
+    }
+
+    .equipe-circle-single{
+        padding: 0 8px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card-text{width: 100%;}
 }

@@ -35,7 +35,7 @@ html,body{
 }
 
 .img-sidebar img:hover{
-	border: 3px solid #031634;
+	border: 5px solid #253959;
 }
 
 .menu{
@@ -52,7 +52,7 @@ html,body{
 }
 
 .menu a:hover{
-	color:#031634;
+	text-decoration: underline;
 	transition-duration: 1s; 
 }
 
