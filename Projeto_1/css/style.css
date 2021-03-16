@@ -5,14 +5,9 @@
 	font-family: 'Libre Baskerville';
 }
 
-html,body{
-	height: 100%;/*altura*/
-}
+html,body{height: 100%;/*altura*/}
 
-.parent{
-	display: flex;
-}
-
+.parent{display: flex;}
 .sidebar{
 	width: 20%;/*largura*/
 	height: 100%;/*altura*/
@@ -27,22 +22,8 @@ html,body{
 }
 
 .img-sidebar {text-align: center;}
-
-.img-sidebar img{
-	width: 80%;/*largura*/
-	border: 5px solid #031634;
-	border-radius: 50%;
-}
-
-.img-sidebar img:hover{
-	border: 5px solid #253959;
-}
-
-.menu{
-	margin: 20px 0;
-	text-align: center;
-}
-
+.img-sidebar img{width: 80%;/*largura*/border: 5px solid #031634;border-radius: 50%;}
+.menu{margin: 20px 0;text-align: center;}
 .menu a{
 	color: #E8DDCB;
 	display: block;
@@ -51,15 +32,7 @@ html,body{
 	text-decoration: none;
 }
 
-.menu a:hover{
-	text-decoration: underline;
-	transition-duration: 1s; 
-}
-
-.menu a.selected{
-	opacity: 1;
-}
-
+.menu a:hover{text-decoration: underline;}
 .content{
 	position: absolute;
 	left: 20%;
@@ -70,37 +43,13 @@ html,body{
 	background-color:#031634;
 }
 
-section.descricao{
-	position: relative;
-	top: 50%;
-	transform:translateY(-50%);
-}
-
-section.descricao h2{
-	color: #CDB380;
-	font-size: 40px;
-}
-
+section.descricao{position: relative;top: 50%;transform:translateY(-50%);}
+section.descricao h2{color: #CDB380;font-size: 40px;}
 section.descricao h2 > span,
-section.descricao h3 > span{
-	color:#E8DDCB;
-}
-
-section.descricao h3{
-	margin: 15px 0;
-	color:#CDB380;
-}
-
-section.descricao p{
-	color:#DC9E82;
-	font-size: 18px;
-	margin-top: 40px;
-}
-
-.icones-sociais{
-	margin-top: 30px;
-}
-
+section.descricao h3 > span{color:#E8DDCB;}
+section.descricao h3{margin: 15px 0;color:#CDB380;}
+section.descricao p{color:#DC9E82;font-size: 18px;margin-top: 40px;}
+.icones-sociais{margin-top: 30px;}
 .icones-sociais a{
 	text-decoration: none;
 	color:#031634;
@@ -129,22 +78,7 @@ section.descricao p{
 	}
 }
 
-.icones-sociais a:hover{
-	color:#E8DDCB ;
-}
-
-.icones-sociais i{
-	line-height: 40px;
-}
-
-.sobre p{
-	margin-top: 15px;
-	color:#DC9E82;
-	font-size: 20px;
-}
-
-.sobre h1{
-	font-size: 40px;
-	margin-top: 40%;
-	color: #CDB380;
-}
+.icones-sociais a:hover{color:#E8DDCB ;transition: 0.7s;}
+.icones-sociais i{line-height: 40px;}
+.sobre p{margin-top: 15px;color:#DC9E82;font-size: 20px;}
+.sobre h1{font-size: 40px;margin-top: 40%;color: #CDB380;}
