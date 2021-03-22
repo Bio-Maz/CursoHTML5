@@ -1,0 +1,187 @@
+/*****RESET****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+/**************/
+/****CLASSES AUXILIARES****/
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.clear {
+  clear: both;
+}
+/**************/
+body {
+  background: black;
+  overflow-x: hidden;
+}
+/****HEADER****/
+header {
+  background: black;
+  padding: 8px 0;
+}
+header a img {
+  max-width: 120px;
+}
+header .header-left {
+  float: left;
+}
+header .header-left .menu-header {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  margin-left: 20px;
+}
+header .header-left .menu-header li {
+  margin-right: 15px;
+  display: inline-block;
+}
+header .header-left .menu-header li a {
+  color: white;
+  text-decoration: none;
+}
+header .header-right {
+  float: right;
+  margin-top: 10px;
+}
+header .header-right i {
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  margin: 0 10px;
+}
+header .header-right .search,
+header .header-right .notification {
+  display: inline-block;
+}
+header .header-right .notification {
+  position: relative;
+}
+header .header-right .notification .circle-notification {
+  position: absolute;
+  right: -2px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #e50914;
+  text-align: center;
+  vertical-align: 20px;
+}
+header .header-right .notification .circle-notification span {
+  font-size: 12px;
+  color: #ffffff;
+}
+header .header-right a {
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  header .header-left .menu-header {
+    display: none;
+  }
+}
+/**************/
+/****DESTAQUE***/
+section.destaque {
+  background-image: url(../imagens/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+section.destaque #video-destaque {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+section.destaque .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+section.destaque .texto-destaque {
+  margin-top: 70px;
+  margin-left: 4%;
+  z-index: 3;
+  color: white;
+  position: relative;
+}
+section.destaque .texto-destaque h2 {
+  color: #e50914;
+  margin-bottom: 10px;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+section.destaque .texto-destaque h3 {
+  color: white;
+  font-size: 25px;
+}
+section.destaque .texto-destaque p {
+  color: white;
+  margin-top: 15px;
+  font-size: 18px;
+}
+section.destaque .texto-destaque a {
+  background-color: rgba(100, 100, 100, 0.3);
+  color: white;
+  text-decoration: none;
+  padding: 8px 40px;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+section.destaque .texto-destaque i {
+  position: relative;
+  right: 5px;
+}
+section.destaque .texto-destaque a:hover {
+  background: #ffffff;
+  color: black;
+}
+/*******************/
+/****VITRINE***/
+section.vitrine .vitrine-flex {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+section.vitrine .vitrine-flex .vitrine-single-banner {
+  width: 100%;
+  padding-top: calc(16.6% / 2);
+  float: left;
+  position: relative;
+}
+section.vitrine .vitrine-flex .vitrine-single-banner .vitrine-wraper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.vitrine .vitrine-flex .vitrine-wraper:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s;
+}
