@@ -1,0 +1,243 @@
+/****RESET****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*************/
+/****CLASSES AUXILIARES****/
+.center {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.clear {
+  clear: both;
+}
+/*************/
+/****HEADER****/
+header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+header .header-wraper {
+  float: left;
+  width: 33.3%;
+}
+header .header-wraper .logo-desktop {
+  width: 140px;
+  height: 40px;
+  background-image: url(../imagens/logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .header-wraper .pesquisa-desktop {
+  margin-top: 5px;
+  text-align: center;
+}
+header .header-wraper .pesquisa-desktop input[type=text] {
+  text-align: center;
+  max-width: 200px;
+  padding: 5px 30px;
+  border: 1px solid #AFAFAF;
+  color: #AFAFAF;
+  background-image: url(../imagens/search.png);
+  background-size: 6%;
+  background-repeat: no-repeat;
+  background-position: 28%;
+}
+header .header-wraper .icones-desktop {
+  margin-top: 5px;
+  float: right;
+}
+header .header-wraper .icones-desktop ul {
+  list-style-type: none;
+}
+header .header-wraper .icones-desktop ul li {
+  display: inline-block;
+  padding-left: 25px;
+}
+header .header-wraper .icones-desktop ul li a {
+  font-size: 22px;
+  color: #262626;
+}
+header .header-wraper .icones-desktop ul .foto-icones {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding-left: 20px;
+  background-image: url(../imagens/Super-Mario-Bros.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  vertical-align: -4px;
+}
+/**********************/
+/****S1****/
+section.s1 {
+  padding: 30px 0;
+}
+section.s1 .center {
+  max-width: 900px;
+}
+section.s1 .s1-wraper1 {
+  width: 30%;
+  float: left;
+}
+section.s1 .s1-wraper1 .foto-s1 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../imagens/perfil.jpg);
+  background-position: center;
+  background-size: cover;
+}
+section.s1 .s1-wraper2 {
+  width: 70%;
+  float: left;
+}
+section.s1 .s1-wraper2 h2 {
+  font-size: 25px;
+  display: inline-block;
+  font-weight: lighter;
+  vertical-align: middle;
+  color: #616161;
+  padding-top: 10px;
+}
+section.s1 .s1-wraper2 input {
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  color: #616161;
+  vertical-align: -5px;
+}
+section.s1 .s1-wraper2 a {
+  color: black;
+  font-size: 20px;
+  vertical-align: -6px;
+  margin-left: 8px;
+}
+section.s1 .s1-wraper2 .seguidores {
+  margin-top: 20px;
+}
+section.s1 .s1-wraper2 .seguidores p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+  color: #616161;
+}
+section.s1 .s1-wraper2 .seguidores a {
+  font-size: 18px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #616161;
+}
+section.s1 .s1-wraper2 .descricao {
+  margin-top: 20px;
+}
+section.s1 .s1-wraper2 .descricao h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+section.s1 .s1-wraper2 .descricao p {
+  font-size: 17px;
+  line-height: 23px;
+}
+/****************/
+/****SEGUIDORES-MOBILE****/
+div.seguidores-mobile {
+  display: none;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+div.seguidores-mobile p {
+  display: inline-block;
+  padding: 0 40px;
+  color: #616161;
+}
+div.seguidores-mobile p b {
+  color: black;
+}
+div.seguidores-mobile p a {
+  text-decoration: none;
+  color: #616161;
+}
+/****S2****/
+section.s2 {
+  padding: 10px 0;
+  text-align: center;
+}
+section.s2 .center .borda {
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+}
+section.s2 .center a {
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 12px;
+  padding-top: 15px;
+  color: #8c8c8c;
+}
+section.s2 .center a:hover {
+  border-top: 2px solid #7b7b7b;
+}
+/*******************/
+/****PUBLICACOES****/
+section.publicacoes {
+  padding: 10px 0;
+}
+section.publicacoes .center-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.publicacoes .center-flex .publicacao-single {
+  width: 30%;
+  margin-bottom: 4%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 778px) {
+  header .header-wraper {
+    width: 50%;
+  }
+  header .header-wraper .pesquisa-desktop {
+    display: none;
+  }
+  header .header-wraper .icones-desktop ul li {
+    padding-left: 18px;
+  }
+  section.s1 .s1-wraper1 .foto-s1 {
+    width: 100px;
+    height: 100px;
+  }
+  section.s1 .s1-wraper2 h2 {
+    display: block;
+  }
+  section.s1 .s1-wraper2 input {
+    width: calc(100% - 55px);
+    margin-left: 0;
+  }
+  section.s1 .seguidores {
+    display: none;
+  }
+  div.seguidores-mobile {
+    display: block;
+  }
+  section.publicacoes .center .center-flex .publicacao-single {
+    width: 32.8%;
+    margin-bottom: 1%;
+    height: 190px;
+  }
+}
