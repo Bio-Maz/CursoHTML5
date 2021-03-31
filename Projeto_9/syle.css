@@ -1,0 +1,134 @@
+/****RESET****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*********************/
+/****CLASSES AUXILIARES****/
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/**************************/
+/****BODY****/
+body {
+  background-color: #141414;
+}
+body .autor {
+  margin-top: 10%;
+  background: rgba(110, 172, 223, 0.5);
+  width: 340px;
+  height: 40px;
+  position: fixed;
+  border-radius: 10px;
+}
+body .autor h3 {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  margin: 12px 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+body .autor h3 b {
+  font-size: 14px;
+  text-transform: none;
+}
+body .autor a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 9px;
+  font-size: 18px;
+}
+body .autor a:hover {
+  color: #cfcece;
+}
+/**************************/
+/****HEADER****/
+header {
+  padding: 8px 0;
+  background-color: #282828;
+}
+header .menu {
+  width: 40%;
+}
+header .menu .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .menu .logo img {
+  max-width: 200px;
+  width: 100%;
+}
+header .menu .menu-items {
+  display: inline-block;
+  margin-left: 10px;
+}
+header .menu .menu-items a {
+  color: #787878;
+  margin-right: 10px;
+  text-decoration: none;
+}
+header .menu .menu-items a:hover {
+  color: white;
+}
+header .search {
+  width: 60%;
+  text-align: right;
+}
+header .search .input-search {
+  position: relative;
+  width: 200px;
+  display: inline-block;
+}
+header .search .input-search i {
+  position: absolute;
+  left: 4px;
+  top: 15px;
+  color: #646464;
+}
+header .search .input-search input[type=text] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #787878;
+  margin: 9px 0;
+  padding-left: 24px;
+  background-color: #282828;
+  color: white;
+}
+/**************************/
+/****MAIN****/
+div.main .banner-principal {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+div.main h2 {
+  color: white;
+  width: 100%;
+  margin: 30px 0;
+}
+div.main .card-movie {
+  width: 20%;
+}
+div.main .card-movie img {
+  width: 100%;
+  transition: 1s;
+}
+div.main .card-movie img:hover {
+  transform: scale(1.1, 1.1);
+}
+/**************************/
+@media screen and (max-width: 1000px) {
+  header .menu .menu-items {
+    display: none;
+  }
+}
