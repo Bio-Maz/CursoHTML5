@@ -1,0 +1,215 @@
+/****RESET***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*********************/
+/****CLASSES AUXILIARES****/
+.container {
+  max-width: 950px;
+}
+/*********************/
+/****BODY****/
+body .autor {
+  z-index: 999;
+  margin-top: 10%;
+  background: rgba(110, 172, 223, 0.5);
+  width: 320px;
+  height: 40px;
+  position: fixed;
+  border-radius: 10px;
+}
+body .autor h3 {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  margin: 12px 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+body .autor h3 b {
+  font-size: 14px;
+  text-transform: none;
+}
+body .autor a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 5px;
+  font-size: 18px;
+}
+body .autor a:hover {
+  color: #cfcece;
+}
+/**************************/
+/****NAVBAR****/
+nav.navbar {
+  padding: 0;
+}
+nav.navbar .navbar-brand {
+  font-size: 25px;
+}
+/********************/
+/****BOX****/
+div.box {
+  position: relative;
+  top: 47px;
+}
+div.box .banner {
+  padding: 150px 0;
+  background-image: url(../imagens/home-office-5112706_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+div.box .banner .overlay {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.5);
+}
+div.box .banner .container {
+  position: relative;
+  z-index: 2;
+}
+div.box .banner .container h2 {
+  color: #33c1b7;
+  font-size: 50px;
+}
+div.box .banner .container p {
+  color: white;
+  font-size: 20px;
+  margin: 24px 0;
+}
+div.box .banner .container a {
+  display: inline-block;
+  color: white;
+  padding: 10px 18px;
+  background: #26a29a;
+  font-size: 19px;
+  text-decoration: none;
+}
+/*********************/
+/****CADASTRO-LEAD****/
+section.cadastro-lead {
+  margin-top: 45px;
+  background: #26a29a;
+  padding: 40px 0;
+}
+section.cadastro-lead h2 {
+  font-size: 24px;
+  color: white;
+  margin-top: 5px;
+}
+section.cadastro-lead form input[type=text] {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  padding-left: 8px;
+}
+section.cadastro-lead form input[type=submit] {
+  width: 20%;
+  height: 40px;
+  border: none;
+  vertical-align: middle;
+}
+/*********************/
+/****DEPOIMENTO****/
+section.depoimento {
+  padding: 40px 0;
+}
+section.depoimento h2 {
+  color: #4b4b4b;
+}
+section.depoimento blockquote {
+  margin-top: 20px;
+  color: #4b4b4b;
+  font-size: 16px;
+}
+/*********************/
+/****DIFERENCIAIS****/
+section.diferenciais {
+  background: #e1e1e1;
+  padding: 20px 0;
+}
+section.diferenciais h2 {
+  color: #4b4b4b;
+}
+section.diferenciais .container {
+  margin-top: 20px;
+}
+section.diferenciais .container h3 {
+  color: #26a29a;
+}
+section.diferenciais .container h2 {
+  font-size: 22px;
+}
+/*********************/
+/****EQUIPE****/
+section.equipe h2 {
+  background: #26a29a;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+section.equipe .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section.equipe .container .equipe-single {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 8px 7px 5px -3px rgba(20, 20, 20, 0.6);
+}
+section.equipe .container .equipe-single .user-picture {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+section.equipe .container .equipe-single .user-picture .user-picture-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+/********************/
+/****FINAL****/
+section.final {
+  padding: 30px;
+  background: #e8e8e8;
+}
+section.final h2 {
+  margin: 0 0 20px 0;
+  font-size: 26px;
+}
+section.final textarea {
+  height: 120px;
+  margin-bottom: 10px;
+}
+/********************/
+@media screen and (max-width: 765px) {
+  section.equipe .container .equipe-single .row .user-picture {
+    width: 40%;
+    padding-top: 50%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  section.final .col-md-6 {
+    margin-top: 30px;
+  }
+}
